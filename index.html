@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Camber Racing</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="res/styles/globals.css">
+        <link rel="stylesheet" href="res/styles/indexstyle.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+
+    <body>
+        
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Camber Racing</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#Abt_us">About Us</a></li>
+                    <li><a href="#">Our Cars</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#contact_us">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+
+        <div class="carousel carousel-slider">
+            <div class="container">
+                <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1">
+                    <div class="top-left">
+                        <h3>The Unknown Food</h3>
+                    </div>
+                </a>
+                <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2">
+                    <div class="top-left">
+                        <h3>The Chicken Salami</h3>
+                    </div>
+                </a>
+                <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3">
+                    <div class="top-left">
+                        <h3>The Alcoholic Bread</h3>
+                    </div>
+                </a>
+                <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4">
+                    <div class="top-left">
+                        <h3>The Healthy Salad</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!--Both the About Us options can be explored. I personally like the one inside the <main> container. If going
+                by that then we will have to make some changes in the allignment of the Text in the carousel-->
+            
+            <!-- <div class="top-right">
+                <p>
+                    <h2>About Us</h2><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lacus interdum, vestibulum risus
+                    id, iaculis tortor. Nulla in mi et odio aliquet finibus vel ac massa. Maecenas commodo, turpis ac
+                    eleifend hendrerit, mauris lectus faucibus augue, sed imperdiet mi lorem eu tellus. Quisque at maximus
+                    risus. Phasellus non scelerisque sem. Maecenas eget elit eget felis suscipit euismod. Ut sit amet diam
+                    id nulla rhoncus semper ut ac enim. Curabitur elit ligula, aliquet at rhoncus non, aliquet id eros.
+                </p>
+            </div> -->
+        </div>
+        <br>
+
+        <main class="orange darken-2">
+            <div class="container">
+                
+                <div class="row">
+
+                    <div class="col m8 s12">
+                        <div class="row">
+                            
+                            <br>
+                            <div id="Abt_us" class="about_us col white black-text">
+                                <h2>ABOUT US</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem blanditiis amet, aliquid illo placeat 
+                                    molestiae! Quaerat quidem accusamus, vel temporibus quod molestias? Non cumque, fuga officiis dignissimos
+                                    exercitationem harum praesentium.</p>
+                                <br>
+                                <hr>
+                            </div>
+
+                            <div class="subscription col white black-text">
+                                <h2>SUBSCRIPTION</h2>
+                                <p>
+                                    We, as an active club, conduct many activities. To get regular updates on our activities click on the
+                                    subscribe button. <br>
+                                    <a class="waves-effect waves-light btn right"><i class="material-icons left">add</i>SUBSCRIBE</a>
+                                </p>
+                                <pre>
+                                    
+                                </pre>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col s12 m3 offset-m1 black-text">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="https://lorempixel.com/800/400/food/1">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">SPONSOR OF THE DAY</span><hr>
+                                <p><h5>Name</h5></p> 
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I 
+                                require little markup to use effectively.</p>
+                            </div>
+                        </div>        
+                    </div>
+
+                </div> 
+            </div>
+        </main>
+
+        <footer class="page-footer grey darken-3 white-text">
+            <div class="container">
+                <div class="row">
+                    <div id="contact_us" class="col s12 m4">
+                        <p style="text-align: center">Contact Us</p>
+                    </div>
+                    <div class="col s12 m4">
+                        <p style="text-align: center">Social Media Links</p>
+                    </div>
+                    <div class="col s12 m4">
+                        <p style="text-align: center">Website Info</p> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $('.carousel.carousel-slider').carousel({
+                indicators: true,
+                fullWidth: true,
+                duration: 500
+            });
+
+            setInterval(function () {
+                $('.carousel').carousel('next');
+            }, 8000)
+        </script>
+
+    </body>
+
+</html>
